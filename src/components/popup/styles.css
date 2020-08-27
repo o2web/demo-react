@@ -1,0 +1,28 @@
+.popup {
+    background-color: #000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.popup__wrapper {
+    margin: 0 2em;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.popup__close {
+    position: absolute;
+    top: 2em;
+    right: 0;
+}
+
+.popup__picture {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
