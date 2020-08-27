@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+
+// styles
 import './App.css';
+
+// components
+import DogList from './components/dogList/DogList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <h1>Achat de chien</h1>
+      <table className="dogs-list">
+        <thead className="dogs-list__head">
+        <tr>
+          <th>Photo</th>
+          <th>Nom</th>
+          <th>Race</th>
+          <th>Sexe</th>
+          <th>Age</th>
+          <th>État</th>
+        </tr>
+        </thead>
+        <tbody className="dogs-list__body">
+          <DogList />
+        </tbody>
+      </table>
     </div>
   );
 }
